@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Routes | Hyderabad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay ">
+        <div class="content">
+            <div class="logo">
+                <!-- <h3>CITY ROUTES</h3>
+                <h5>HYDERABAD</h5> -->
+                <img src="images/images/AppLogo.png" alt="App Logo">
+            </div>
+
+            <div class="slider">
+                <div class="slider-track">
+
+                    <div class="features">
+                        <div class="image">
+                            <img src="images/icons/BusWhite.png" alt="Icon">
+                        </div>
+                        <div class="text">
+                            <h4>Routes</h4>
+                            <p>Search by Route or Stop</p>
+                        </div>
+                    </div>
+
+                    <div class="features">
+                        <div class="image">
+                            <img src="images/icons/fromToWhite.png" alt="Icon">
+                        </div>
+                        <div class="text">
+                            <h4> From - To</h4>
+                            <p> Direct & indirect bus routes</p>
+                        </div>
+                    </div>
+
+                    <div class="features">
+                        <div class="image">
+                            <img src="images/icons/RupeeWhite.png" alt="Icon">
+                        </div>
+                        <div class="text">
+                            <h4>Fares & Passes</h4>
+                            <p>Check Fare Chart & Bus Pass Info</p>
+                        </div>
+                    </div>
+
+                    <div class="features">
+                        <div class="image">
+                            <img src="images/icons/MoreWhite.png" alt="Icon">
+                        </div>
+                        <div class="text">
+                            <h4>and More</h4>
+                            <p>Explore all helpful tools & info</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 👇 Dots -->
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <button onclick="downloadNow()">DOWNLOAD NOW</button>
+        </div>
+    </div>
+
+    <div class="popup hide" id="popUp">
+        <div class="popupBox hide" id="chooseBox">
+            <h3>Download Now</h3>
+            <p>Want to support us? Use Support & Download, it’s a short link with a few seconds of ads that helps fund
+                the
+                app. Or tap Direct Download to skip ads and download instantly.</p>
+            <button class="support-btn" onclick="supportDownload()">Support & Download</button>
+            <p class="directLink" onclick="directDownload()">Direct Download</p>
+        </div>
+
+        <div class="popupBox hide" id="downloadBox">
+            <h3>Downloading</h3>
+            <img src="images/icons/DownloadGreen.png" alt="Icon">
+            <p>Thank you for downloading our Application. If download is not started automatically <span
+                    id="clickHere">Click
+                    Here</span></p>
+            <button class="close-Btn" onclick="closePopUp()">Close</button>
+        </div>
+
+        <div class="popupBox hide" id="supportDownload">
+            <h3>Thank You</h3>
+
+            <p>Dear Sir/Madam, thank you very much for choosing this option. If you want to <strong>watch a
+                    video</strong> on <strong>how
+                    to
+                    download</strong> by this option <span id="clickHere">Click
+                    Here</span></p>
+            <button class="support-btn">Continue to download</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

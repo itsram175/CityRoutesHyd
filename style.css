@@ -1,0 +1,254 @@
+:root {
+    --primaryColor: #151A2D;
+    --goldenColor: #FFD700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--primaryColor);
+    background: url(images/images/Hyderabad.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: opacity(10%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px) brightness(0.7);
+    -webkit-backdrop-filter: blur(8px) brightness(0.7);
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Optional tint */
+    z-index: 1;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+.content .logo {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .logo h3 {
+    font-size: 32px;
+    color: var(--goldenColor);
+    letter-spacing: 1px;
+}
+
+.content .logo h5 {
+    color: white;
+    font-size: 20px;
+    margin-top: -8px;
+    letter-spacing: 1px;
+}
+
+.content .logo img {
+    width: 60%;
+}
+
+.content button {
+    padding: 16px 36px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #28a745, #218838);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.content button:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    box-shadow: 0 10px 25px rgba(33, 136, 56, 0.4);
+    transform: scale(1.05);
+}
+
+.slider {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.features {
+    min-width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+/* Dots */
+.slider-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #555;
+}
+
+.features .text h4 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.features .text p {
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.popupBox {
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 5px;
+}
+
+.popupBox h3 {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.5);
+}
+
+.popupBox p {
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.support-btn {
+    width: 95%;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    /* box-shadow: 0 6px 18px rgba(40, 167, 69, 0.4); */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.support-btn:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: scale(1.05);
+}
+
+.close-Btn {
+    width: 95%;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    /* background: linear-gradient(135deg, #dc3545, #c82333); */
+    /* color: white; */
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+
+    color: red;
+    border: solid 2px red;
+}
+
+
+.popupBox .directLink {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--primaryColor);
+}
+
+.popupBox .directLink:hover {
+    color: blue;
+}
+
+.popupBox img {
+    width: 80px;
+    margin-top: 5px;
+}
+
+.popupBox.hide {
+    display: none;
+}
+
+.popup.hide {
+    display: none;
+}
+
+#clickHere {
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+}
