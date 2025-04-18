@@ -46,6 +46,16 @@ function directDownload() {
     getId('popUp').classList.remove('hide');
     getId('chooseBox').classList.add('hide');
     getId('downloadBox').classList.remove('hide');
+
+    window.location.href = "https://neon-crisp-c2dd29.netlify.app/cityroutesHyd.apk";
+}
+
+function downloadHere() {
+    window.location.href = "https://neon-crisp-c2dd29.netlify.app/cityroutesHyd.apk";
+}
+
+function supportDLink() {
+    window.location.href = "https://modijiurl.com/cityroutesHyd";
 }
 
 function closePopUp() {
