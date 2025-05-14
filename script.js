@@ -55,7 +55,7 @@ function downloadHere() {
 }
 
 function supportDLink() {
-    window.location.href = "https://modijiurl.com/cityroutesHyd";
+    window.location.href = "https://shrinkme.ink/CityRoutesHYD";
 }
 
 function closePopUp() {
